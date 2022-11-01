@@ -1,18 +1,17 @@
 :root {
-    --primary-text-color: #212121;
-    --secondary-text-color: hsl(0, 0%, 46%);
-    --brand-color: #2196F3;
+    --title-text-color: #212121;
+    --primary-text-color: hsl(0, 0%, 46%);
+    --accent-color: #2196F3;
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #F5F4FA;
     --header-bg-color: #ffffff;
-    --footer-bg-color: #2F303A;
-    --white-text-color: #ffffff;
     --dark-bg-color: #2F303A;
+    --white-text-color: #ffffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     background-color: var(--primary-bg-color);
 }
 
@@ -46,11 +45,11 @@ p {
 }
 
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31 / 26);
+    line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -65,11 +64,11 @@ p {
 
 .link:hover,
 .link:focus {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 .logo-blue {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 .nav-list {}
@@ -79,13 +78,13 @@ p {
 .nav-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16 / 14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 .current {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 .header-contacts-list {}
@@ -95,9 +94,9 @@ p {
 .header-contacts-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: calc(16 / 14);
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 
@@ -111,7 +110,7 @@ p {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: calc(60 / 44);
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -127,17 +126,10 @@ p {
 .hero-button {
     font-weight: 700;
     font-size: 16px;
-    line-height: calc(30 / 16);
-    align-items: center;
-    text-align: center;
+    line-height: 1.88;
     letter-spacing: 0.06em;
-    width: 216px;
-    height: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     color: var(--white-text-color);
-    background-color: var(--brand-color);
-
+    background-color: var(--accent-color);
 }
 
 
@@ -152,7 +144,6 @@ p {
     margin: -1px;
     border: 0;
     padding: 0;
-
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -165,17 +156,17 @@ p {
 
 .benefits-list-title {
     font-size: 14px;
-    line-height: calc(16 / 14);
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 .benefits-text {
     font-size: 14px;
-    line-height: calc(24 / 14);
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 
@@ -187,10 +178,10 @@ p {
 
 .section-title {
     font-size: 36px;
-    line-height: calc(42 / 36);
+    line-height: 1.67;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 .work-list {}
@@ -217,18 +208,18 @@ p {
 .team-member {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(19 / 16);
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 .team-occupation {
     font-size: 16px;
-    line-height: calc(19 / 16);
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
 
 
@@ -255,7 +246,7 @@ p {
 .address-link {
     font-style: normal;
     font-size: 14px;
-    line-height: calc(24 / 14);
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -266,7 +257,7 @@ p {
 
 .address-link.street:hover,
 .address-link.street:focus {
-    color: var(--brand-color);
+    color: var(--accent-color);
 }
 
 /* ------------------------------------------------- */
@@ -282,17 +273,17 @@ p {
 .filter-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(26 / 16);
+    line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
 }
 
 .filter-button:hover,
 .filter-button:focus {
     color: var(--white-text-color);
-    background-color: var(--brand-color);
+    background-color: var(--accent-color);
 }
 
 .portfolio-list {}
@@ -303,14 +294,14 @@ p {
 
 .portfolio-pic-title {
     font-size: 18px;
-    line-height: calc(36 / 18);
+    line-height: 2.0;
     letter-spacing: 0.06em;
-    color: var(--primary-text-color);
+    color: var(--title-text-color);
 }
 
 .portfolio-pic-text {
     font-size: 16px;
-    line-height: calc(30 / 16);
+    line-height: 1.87;
     letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
 }
